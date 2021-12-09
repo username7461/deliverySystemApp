@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1897FC49-C110-440F-8BCB-8D224ABDEE83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EDEapp</RootNamespace>
+    <AssemblyName>EDEapp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.0.2\lib\net46\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.0.2\lib\net46\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinPresentation.2.0.2\lib\net46\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.113.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountingReport_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountingReport_Select.Designer.cs">
+      <DependentUpon>AccountingReport_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReport_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountReport_Print.Designer.cs">
+      <DependentUpon>AccountReport_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addressbook.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="airwaybill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bookingorder.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="centre.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="commercialinvoice.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="consolidatemonthlyinvoice.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBooking_SelectServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBooking_SelectServiceType.Designer.cs">
+      <DependentUpon>CreateBooking_SelectServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creditcard.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\AddressBook_Package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\AddressBook_Package.Designer.cs">
+      <DependentUpon>AddressBook_Package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\Customer_ViewBookingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\Customer_ViewBookingOrder.Designer.cs">
+      <DependentUpon>Customer_ViewBookingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\Customer_EditPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\Customer_EditPackage.Designer.cs">
+      <DependentUpon>Customer_EditPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_TrackDelivery_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_TrackDelivery_Import.Designer.cs">
+      <DependentUpon>Customer_TrackDelivery_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\AddressBook_BookingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ViewBookingOrder\AddressBook_BookingOrder.Designer.cs">
+      <DependentUpon>AddressBook_BookingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="EditDeliveryStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDeliveryStatus.designer.cs">
+      <DependentUpon>EditDeliveryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importinvoice.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImportInvoice_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportInvoice_List.Designer.cs">
+      <DependentUpon>ImportInvoice_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportInvoice_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportInvoice_Report.Designer.cs">
+      <DependentUpon>ImportInvoice_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\01_AddressBook_Pickup_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\01_AddressBook_Pickup_Import.Designer.cs">
+      <DependentUpon>01_AddressBook_Pickup_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\01_BookingOrder_CreateBooking_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\01_BookingOrder_CreateBooking_Import.Designer.cs">
+      <DependentUpon>01_BookingOrder_CreateBooking_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\02_BookingOrder_CreatePackage_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\02_BookingOrder_CreatePackage_Import.Designer.cs">
+      <DependentUpon>02_BookingOrder_CreatePackage_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\03_AddressBook_Package_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\03_AddressBook_Package_Import.Designer.cs">
+      <DependentUpon>03_AddressBook_Package_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\03_BookingOrder_ReceiveInfo_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\03_BookingOrder_ReceiveInfo_Import.Designer.cs">
+      <DependentUpon>03_BookingOrder_ReceiveInfo_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ImportService\04_BookingOrder_ConfirmOrder_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ImportService\04_BookingOrder_ConfirmOrder_Import.Designer.cs">
+      <DependentUpon>04_BookingOrder_ConfirmOrder_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewDisableButtonColumn.cs" />
+    <Compile Include="DataGridViewEnableDisableButtonCell.cs" />
+    <Compile Include="EditBookingStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBookingStaff.Designer.cs">
+      <DependentUpon>EditBookingStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDestinationStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDestinationStaff.Designer.cs">
+      <DependentUpon>EditDestinationStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPackageStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPackageStaff.Designer.cs">
+      <DependentUpon>EditPackageStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAirwayBillStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAirwayBillStaff.Designer.cs">
+      <DependentUpon>EditAirwayBillStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jobtitle.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\01_AddressBook_Pickup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\01_AddressBook_Pickup.Designer.cs">
+      <DependentUpon>01_AddressBook_Pickup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\01_BookingOrder_CreateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\01_BookingOrder_CreateBooking.Designer.cs">
+      <DependentUpon>01_BookingOrder_CreateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\02_BookingOrder_CreatePackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\02_BookingOrder_CreatePackage.Designer.cs">
+      <DependentUpon>02_BookingOrder_CreatePackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\03_AddressBook_Package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\03_AddressBook_Package.Designer.cs">
+      <DependentUpon>03_AddressBook_Package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\03_BookingOrder_ReceiveInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\03_BookingOrder_ReceiveInfo.Designer.cs">
+      <DependentUpon>03_BookingOrder_ReceiveInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\04_BookingOrder_ConfirmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\04_BookingOrder_ConfirmOrder.Designer.cs">
+      <DependentUpon>04_BookingOrder_ConfirmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_ExportService\04_PackageInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ExportService\04_PackageInformation.Designer.cs">
+      <DependentUpon>04_PackageInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AirwayBill_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirwayBill_Print.Designer.cs">
+      <DependentUpon>AirwayBill_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custoemr_TrackingDelivery_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custoemr_TrackingDelivery_Export.Designer.cs">
+      <DependentUpon>Custoemr_TrackingDelivery_Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialInvoice_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommercialInvoice_List.Designer.cs">
+      <DependentUpon>CommercialInvoice_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialInvoice_Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommercialInvoice_Preview.Designer.cs">
+      <DependentUpon>CommercialInvoice_Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Centre Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Centre Information.Designer.cs">
+      <DependentUpon>Manage Centre Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckSavedCreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckSavedCreditCard.Designer.cs">
+      <DependentUpon>CheckSavedCreditCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactEmail%28lwl%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactEmail%28lwl%29.Designer.cs">
+      <DependentUpon>ContactEmail%28lwl%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactEmail%28st%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactEmail%28st%29.Designer.cs">
+      <DependentUpon>ContactEmail%28st%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateStaffAcccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateStaffAcccount.Designer.cs">
+      <DependentUpon>CreateStaffAcccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditcardRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditcardRecord.Designer.cs">
+      <DependentUpon>CreditcardRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDEapp_PaymentRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDEapp_PaymentRecord.Designer.cs">
+      <DependentUpon>EDEapp_PaymentRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStaffAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStaffAccount.Designer.cs">
+      <DependentUpon>EditStaffAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyInvoice_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyInvoice_List.Designer.cs">
+      <DependentUpon>MonthlyInvoice_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyInvoice_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyInvoice_Report.Designer.cs">
+      <DependentUpon>MonthlyInvoice_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="package.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayCash.designer.cs">
+      <DependentUpon>PayCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentrecord.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentRecordDetails.Designer.cs">
+      <DependentUpon>PaymentRecordDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreAlertCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreAlertCustomer.designer.cs">
+      <DependentUpon>PreAlertCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prealertrecord.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AirwayBillExpenseCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirwayBillExpenseCalculator.Designer.cs">
+      <DependentUpon>AirwayBillExpenseCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="staff.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllBookingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllBookingOrder.designer.cs">
+      <DependentUpon>ViewAllBookingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllPackage.designer.cs">
+      <DependentUpon>ViewAllPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaffAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaffAccount.Designer.cs">
+      <DependentUpon>ViewStaffAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSOEditCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSOEditCustomerInfo.Designer.cs">
+      <DependentUpon>CSOEditCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSOViewCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSOViewCustomerInfo.Designer.cs">
+      <DependentUpon>CSOViewCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddressBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAddressBook.Designer.cs">
+      <DependentUpon>CustomerAddressBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDEapp_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDEapp_MainMenu.Designer.cs">
+      <DependentUpon>EDEapp_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDEAustraliaLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDEAustraliaLocation.Designer.cs">
+      <DependentUpon>EDEAustraliaLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDEJapanLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDEJapanLocation.Designer.cs">
+      <DependentUpon>EDEJapanLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAccount.Designer.cs">
+      <DependentUpon>EditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeConfirm.Designer.cs">
+      <DependentUpon>CodeConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeeWaiLeeLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeeWaiLeeLocation.Designer.cs">
+      <DependentUpon>LeeWaiLeeLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logging.Designer.cs">
+      <DependentUpon>Logging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReSetPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReSetPassWord.Designer.cs">
+      <DependentUpon>ReSetPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShanghaiLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShanghaiLocation.Designer.cs">
+      <DependentUpon>ShanghaiLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shaTinLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shaTinLocation.Designer.cs">
+      <DependentUpon>shaTinLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingExpenseCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingExpenseCalculator.Designer.cs">
+      <DependentUpon>ShippingExpenseCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAccountInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAccountInfomation.Designer.cs">
+      <DependentUpon>StaffAccountInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAccountInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAccountInformation.Designer.cs">
+      <DependentUpon>ViewAccountInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountingReport.Report.rdlc" />
+    <EmbeddedResource Include="AccountingReport_Select.resx">
+      <DependentUpon>AccountingReport_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountReport_Print.resx">
+      <DependentUpon>AccountReport_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommercialInvoice_Preview.resx">
+      <DependentUpon>CommercialInvoice_Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateBooking_SelectServiceType.resx">
+      <DependentUpon>CreateBooking_SelectServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ViewBookingOrder\AddressBook_Package.resx">
+      <DependentUpon>AddressBook_Package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ViewBookingOrder\Customer_EditPackage.resx">
+      <DependentUpon>Customer_EditPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_TrackDelivery_Import.resx">
+      <DependentUpon>Customer_TrackDelivery_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ViewBookingOrder\AddressBook_BookingOrder.resx">
+      <DependentUpon>AddressBook_BookingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ViewBookingOrder\Customer_ViewBookingOrder.resx">
+      <DependentUpon>Customer_ViewBookingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDeliveryStatus.resx">
+      <DependentUpon>EditDeliveryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\04_PackageInformation.resx">
+      <DependentUpon>04_PackageInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportInvoice_List.resx">
+      <DependentUpon>ImportInvoice_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportInvoice_Report.resx">
+      <DependentUpon>ImportInvoice_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\01_AddressBook_Pickup_Import.resx">
+      <DependentUpon>01_AddressBook_Pickup_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\01_AddressBook_Pickup.resx">
+      <DependentUpon>01_AddressBook_Pickup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\01_BookingOrder_CreateBooking_Import.resx">
+      <DependentUpon>01_BookingOrder_CreateBooking_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\01_BookingOrder_CreateBooking.resx">
+      <DependentUpon>01_BookingOrder_CreateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\02_BookingOrder_CreatePackage_Import.resx">
+      <DependentUpon>02_BookingOrder_CreatePackage_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\02_BookingOrder_CreatePackage.resx">
+      <DependentUpon>02_BookingOrder_CreatePackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\03_AddressBook_Package_Import.resx">
+      <DependentUpon>03_AddressBook_Package_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\03_AddressBook_Package.resx">
+      <DependentUpon>03_AddressBook_Package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\03_BookingOrder_ReceiveInfo_Import.resx">
+      <DependentUpon>03_BookingOrder_ReceiveInfo_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\03_BookingOrder_ReceiveInfo.resx">
+      <DependentUpon>03_BookingOrder_ReceiveInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ImportService\04_BookingOrder_ConfirmOrder_Import.resx">
+      <DependentUpon>04_BookingOrder_ConfirmOrder_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ExportService\04_BookingOrder_ConfirmOrder.resx">
+      <DependentUpon>04_BookingOrder_ConfirmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirwayBill_Print.resx">
+      <DependentUpon>AirwayBill_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommercialInvoice.rdlc" />
+    <EmbeddedResource Include="CommercialInvoice_List.resx">
+      <DependentUpon>CommercialInvoice_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custoemr_TrackingDelivery_Export.resx">
+      <DependentUpon>Custoemr_TrackingDelivery_Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAirwayBillStaff.resx">
+      <DependentUpon>EditAirwayBillStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBookingStaff.resx">
+      <DependentUpon>EditBookingStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDestinationStaff.resx">
+      <DependentUpon>EditDestinationStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPackageStaff.resx">
+      <DependentUpon>EditPackageStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Centre Information.resx">
+      <DependentUpon>Manage Centre Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckSavedCreditCard.resx">
+      <DependentUpon>CheckSavedCreditCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactEmail%28lwl%29.resx">
+      <DependentUpon>ContactEmail%28lwl%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactEmail%28st%29.resx">
+      <DependentUpon>ContactEmail%28st%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateStaffAcccount.resx">
+      <DependentUpon>CreateStaffAcccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditcardRecord.resx">
+      <DependentUpon>CreditcardRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDEapp_PaymentRecord.resx">
+      <DependentUpon>EDEapp_PaymentRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStaffAccount.resx">
+      <DependentUpon>EditStaffAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyInvoice_List.resx">
+      <DependentUpon>MonthlyInvoice_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyInvoice_Report.resx">
+      <DependentUpon>MonthlyInvoice_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayCash.resx">
+      <DependentUpon>PayCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentRecordDetails.resx">
+      <DependentUpon>PaymentRecordDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirwayBillExpenseCalculator.resx">
+      <DependentUpon>AirwayBillExpenseCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreAlertCustomer.resx">
+      <DependentUpon>PreAlertCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllBookingOrder.resx">
+      <DependentUpon>ViewAllBookingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllPackage.resx">
+      <DependentUpon>ViewAllPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffAccount.resx">
+      <DependentUpon>ViewStaffAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSOEditCustomerInfo.resx">
+      <DependentUpon>CSOEditCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSOViewCustomerInfo.resx">
+      <DependentUpon>CSOViewCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAddressBook.resx">
+      <DependentUpon>CustomerAddressBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDEapp_MainMenu.resx">
+      <DependentUpon>EDEapp_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDEAustraliaLocation.resx">
+      <DependentUpon>EDEAustraliaLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDEJapanLocation.resx">
+      <DependentUpon>EDEJapanLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAccount.resx">
+      <DependentUpon>EditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeConfirm.resx">
+      <DependentUpon>CodeConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeeWaiLeeLocation.resx">
+      <DependentUpon>LeeWaiLeeLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logging.resx">
+      <DependentUpon>Logging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReSetPassWord.resx">
+      <DependentUpon>ReSetPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShanghaiLocation.resx">
+      <DependentUpon>ShanghaiLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shaTinLocation.resx">
+      <DependentUpon>shaTinLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingExpenseCalculator.resx">
+      <DependentUpon>ShippingExpenseCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAccountInfomation.resx">
+      <DependentUpon>StaffAccountInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAccountInformation.resx">
+      <DependentUpon>ViewAccountInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MonthlyInvoice.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirwayBill1.png" />
+    <None Include="Resources\AirwayBill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\package-location-1810913-1537551.png" />
+    <None Include="Resources\ede-logo.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pictureBox1.Image.png" />
+    <None Include="Resources\pictureBox5.Image.png" />
+    <None Include="Resources\pictureBox4.Image.png" />
+    <None Include="Resources\pictureBox3.Image.png" />
+    <None Include="Resources\pictureBox2.Image.png" />
+    <None Include="Resources\icons8-preview-pane-32.png" />
+    <None Include="Resources\icons8-hide-24.png" />
+    <None Include="Resources\nnlogistic-bill-invoice-receipt-waybill-fully-editable-vector-icon-coloured-edit-logistic-bill-invoi.jpg" />
+    <None Include="Resources\destination-icon.png" />
+    <None Include="Resources\1131224-200.png" />
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>

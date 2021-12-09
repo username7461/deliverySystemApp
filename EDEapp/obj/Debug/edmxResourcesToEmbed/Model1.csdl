@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="edeaccountModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="addressbook">
+    <Key>
+      <PropertyRef Name="addressId" />
+    </Key>
+    <Property Name="addressId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="companyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="addressLn1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="addressLn2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="addressLn3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="postcode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="faxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telexNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="airwaybill">
+    <Key>
+      <PropertyRef Name="shippingNo" />
+    </Key>
+    <Property Name="shippingNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="shippingExpenses" Type="Double" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="service" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="length" Type="Double" Nullable="false" />
+    <Property Name="width" Type="Double" Nullable="false" />
+    <Property Name="height" Type="Double" Nullable="false" />
+    <Property Name="weight" Type="Double" Nullable="false" />
+    <Property Name="destinationTax" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="transportCharge" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="typeOfExport" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bookingorder">
+    <Key>
+      <PropertyRef Name="bookingID" />
+    </Key>
+    <Property Name="bookingID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="addrID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datetime" Type="DateTime" Nullable="false" />
+    <Property Name="serviceType" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="totalExpenses" Type="Double" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pickupDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pickupTime" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="centre">
+    <Key>
+      <PropertyRef Name="centreID" />
+    </Key>
+    <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descr" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="commercialinvoice">
+    <Key>
+      <PropertyRef Name="invoiceID" />
+    </Key>
+    <Property Name="invoiceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="totalValue" Type="Double" Nullable="false" />
+    <Property Name="creationDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="consolidatemonthlyinvoice">
+    <Key>
+      <PropertyRef Name="invoiceID" />
+    </Key>
+    <Property Name="invoiceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="value" Type="Double" Nullable="false" />
+    <Property Name="startDate" Type="DateTime" Nullable="false" />
+    <Property Name="endDate" Type="DateTime" Nullable="false" />
+    <Property Name="isPay" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="creditcard">
+    <Key>
+      <PropertyRef Name="cardID" />
+    </Key>
+    <Property Name="cardID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cardNo" Type="String" MaxLength="19" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cardType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="expiryDate" Type="DateTime" Nullable="false" />
+    <Property Name="holderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="accountID" />
+    </Key>
+    <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="credibility" Type="Int32" Nullable="false" />
+    <Property Name="creationDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jobtitle">
+    <Key>
+      <PropertyRef Name="jobID" />
+    </Key>
+    <Property Name="jobID" Type="Int32" Nullable="false" />
+    <Property Name="jobName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="log">
+    <Key>
+      <PropertyRef Name="logID" />
+    </Key>
+    <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="actionPerformed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="logID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="times" Type="DateTime" />
+    <Property Name="ipAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="package">
+    <Key>
+      <PropertyRef Name="packageID" />
+    </Key>
+    <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bookingID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pkgName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="packageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="serviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isImport" Type="Boolean" Nullable="false" />
+    <Property Name="qty" Type="Int32" Nullable="false" />
+    <Property Name="unit" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="unitValue" Type="Double" Nullable="false" />
+    <Property Name="statusTime" Type="DateTime" />
+    <Property Name="cusConfirm" Type="Boolean" />
+    <Property Name="addrID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="isComplete" Type="Int32" />
+    <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="staffID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="length" Type="Double" />
+    <Property Name="width" Type="Double" />
+    <Property Name="height" Type="Double" />
+    <Property Name="weight" Type="Double" />
+    <Property Name="expense" Type="Double" />
+  </EntityType>
+  <EntityType Name="paymentrecord">
+    <Key>
+      <PropertyRef Name="paymentID" />
+    </Key>
+    <Property Name="paymentID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="payDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="payMethod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cardID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="payValue" Type="Double" Nullable="false" />
+    <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="stfID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="accountID" />
+    </Key>
+    <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="jobID" Type="Int32" Nullable="false" />
+    <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="edeaccountEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="addressbook" EntityType="Self.addressbook" />
+    <EntitySet Name="airwaybill" EntityType="Self.airwaybill" />
+    <EntitySet Name="bookingorder" EntityType="Self.bookingorder" />
+    <EntitySet Name="centre" EntityType="Self.centre" />
+    <EntitySet Name="commercialinvoices" EntityType="Self.commercialinvoice" />
+    <EntitySet Name="consolidatemonthlyinvoice" EntityType="Self.consolidatemonthlyinvoice" />
+    <EntitySet Name="creditcard" EntityType="Self.creditcard" />
+    <EntitySet Name="customer" EntityType="Self.customer" />
+    <EntitySet Name="jobtitle" EntityType="Self.jobtitle" />
+    <EntitySet Name="log" EntityType="Self.log" />
+    <EntitySet Name="packages" EntityType="Self.package" />
+    <EntitySet Name="paymentrecord" EntityType="Self.paymentrecord" />
+    <EntitySet Name="staff" EntityType="Self.staff" />
+    <EntitySet Name="importinvoices" EntityType="edeaccountModel.importinvoice" />
+    <EntitySet Name="prealertrecord" EntityType="edeaccountModel.prealertrecord" />
+  </EntityContainer>
+  <EntityType Name="importinvoice">
+    <Key>
+      <PropertyRef Name="invoiceID" />
+    </Key>
+    <Property Name="invoiceID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="accountID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="pickupAddrID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="recevierAddrID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="totalValue" Type="Double" Nullable="false" />
+    <Property Name="creationDate" Type="DateTime" Nullable="false" />
+    <Property Name="bookingID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="prealertrecord">
+    <Key>
+      <PropertyRef Name="messageID" />
+    </Key>
+    <Property Name="messageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="packageID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="pkgName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="accID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="statusID" Type="Int32" Nullable="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="isRead" Type="Int32" Nullable="false" />
+    <Property Name="timeUpdated" Type="DateTime" Nullable="false" />
+  </EntityType>
+</Schema>

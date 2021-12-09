@@ -1,0 +1,347 @@
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EDEapp.exe.config
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EDEapp.exe
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EDEapp.pdb
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EntityFramework.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EntityFramework.SqlServer.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\GMap.NET.Core.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\GMap.NET.WindowsForms.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\MySql.Data.CF.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\MySql.Data.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\MySql.Data.Entity.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\MySql.Web.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\Newtonsoft.Json.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SqlClient.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SQLite.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SQLite.EF6.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SQLite.Linq.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Security.Principal.Windows.dll
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EntityFramework.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\EntityFramework.SqlServer.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\Newtonsoft.Json.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SqlClient.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Data.SQLite.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\bin\Debug\System.Security.Principal.Windows.xml
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ContactEmailLWL.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ContactEmailShaTin.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.CSOEditCustomerInfo.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.CSOViewCustomerInfo.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.CustomerAddressBook.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.EDEapp_MainMenu.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.EditAccount.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.CodeConfirm.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.LeeWaiLeeLocation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.Logging.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.Login.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.Properties.Resources.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ReSetPassWord.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.shaTinLocation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ShippingExpenseCalculator.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.csproj.GenerateResource.cache
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.csproj.CoreCompileInputs.cache
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.csproj.CopyComplete
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.exe
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.pdb
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.EDEAustraliaLocation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ShanghaiLocation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ViewAccountInformation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.StaffAccountInfomation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.CreateStaffAcccount.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.ViewStaffAccount.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.EditStaffAccount.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEApp\EDEapp\obj\Debug\EDEapp.Payment.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EDEapp.exe.config
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EDEapp.exe
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EDEapp.pdb
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EntityFramework.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\GMap.NET.Core.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\MySql.Data.CF.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\MySql.Data.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\MySql.Web.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EntityFramework.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.csprojAssemblyReference.cache
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailLWL.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailShaTin.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUsAustralia.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUsHK.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUsJP.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUsShanghai.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.CreateStaffAcccount.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.EditStaffAccount.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.Payment.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ViewStaffAccount.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.CSOEditCustomerInfo.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.CSOViewCustomerInfo.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.CustomerAddressBook.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_MainMenu.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.EDEAustraliaLocation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.EDEJapnLocation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.EditAccount.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.CodeConfirm.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.LeeWaiLeeLocation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.Logging.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.Login.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.Register.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.Properties.Resources.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ReSetPassWord.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ShanghaiLocation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.shaTinLocation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ShippingExpenseCalculator.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.StaffAccountInfomation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.ViewAccountInformation.resources
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.GenerateResource.cache
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CoreCompileInputs.cache
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CopyComplete
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.exe
+C:\Users\AAA\Desktop\EDEapp\EDEapp\obj\Debug\EDEapp.pdb
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_PaymentRecord.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.PaymentRecordDetailsCreditCard.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.CreditcardRecord.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.CheckSavedCreditCard.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.EDEJapanLocation.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUs.resources
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.csprojAssemblyReference.cache
+D:\lesson\Year1 Sem2\ITP4915\assignment\EDEapp\EDEapp\obj\Debug\EDEapp.ManageCentreInformation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csprojAssemblyReference.cache
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditBookingStaff.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ManageCentreInformation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CheckSavedCreditCard.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailLWL.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailShaTin.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUs.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CreateStaffAcccount.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CreditcardRecord.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_PaymentRecord.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditStaffAccount.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Payment.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.PaymentRecordDetailsCreditCard.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewStaffAccount.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CSOEditCustomerInfo.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CSOViewCustomerInfo.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CustomerAddressBook.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_MainMenu.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEAustraliaLocation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEJapanLocation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditAccount.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CodeConfirm.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.LeeWaiLeeLocation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Logging.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Login.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Properties.Resources.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ReSetPassWord.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ShanghaiLocation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.shaTinLocation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ShippingExpenseCalculator.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.StaffAccountInfomation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewAccountInformation.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.GenerateResource.cache
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CoreCompileInputs.cache
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.exe
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.pdb
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.exe.config
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.exe
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.pdb
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.Core.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.CF.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Web.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.dll
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.xml
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CopyComplete
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditAirwayBillStaff.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditDestinationStaff.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditPackageStaff.resources
+D:\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AirwayBillExpenseCalculator.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.exe
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.pdb
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditAirwayBillStaff.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditBookingStaff.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditDestinationStaff.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditPackageStaff.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ManageCentreInformation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CheckSavedCreditCard.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailLWL.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactEmailShaTin.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ContactUs.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CreateStaffAcccount.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CreditcardRecord.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_PaymentRecord.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditStaffAccount.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Payment.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.PaymentRecordDetailsCreditCard.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AirwayBillExpenseCalculator.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewStaffAccount.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CSOEditCustomerInfo.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CSOViewCustomerInfo.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CustomerAddressBook.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEapp_MainMenu.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEAustraliaLocation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EDEJapanLocation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditAccount.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CodeConfirm.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.LeeWaiLeeLocation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Logging.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Login.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Properties.Resources.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ReSetPassWord.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ShanghaiLocation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.shaTinLocation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ShippingExpenseCalculator.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.StaffAccountInfomation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewAccountInformation.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.GenerateResource.cache
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CoreCompileInputs.cache
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.exe.config
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.exe
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EDEapp.pdb
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.Core.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\MySql.Web.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Data.SQLite.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.CopyComplete
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\EnvDTE.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\stdole.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\RdlCompile.cache
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\RdlCompile.compiled
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AirwayBill_Print.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingOrder_01.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingOrder_02.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingOrder_03.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingOrder_04.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Register.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AddressBook_Pickup.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AddressBook_Package.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AddressBook_Pickup_Import.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingImportOrder_01.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingImportOrder_02.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AddressBook_Package_Import.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingImportOrder_03.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.BookingImportOrder_04.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CreateBooking_SelectServiceType.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.MonthlyInvoice_Report.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CommercialInvoice_List.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.MonthlyInvoice_List.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ImportInvoice_Report.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_TrackDelivery_Import.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_TrackDelivery_Export.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ImportInvoice_List.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CommercialInvoice_Preview.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.PackageDetail.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AccountingReport_Select.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.AccountReport_Print.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_EditPackage.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.EditDeliveryStatus.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.CheckNotifications.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewAllPackage.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.ViewAllBookingOrder.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_ViewBookingOrder.AddressBook_Package.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_ViewBookingOrder.ChangePickupAddress.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.Customer_ViewBookingOrder.CustomerViewBookingOrder.resources
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.csproj.AssemblyReference.cache
+C:\Users\Matthewowo\Desktop\EDEapp (Final)\EDEapp\EDEapp\obj\Debug\EDEapp.PayCash.resources

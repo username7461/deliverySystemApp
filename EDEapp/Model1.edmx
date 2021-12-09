@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="edeaccountModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="addressbook">
+          <Key>
+            <PropertyRef Name="addressId" />
+          </Key>
+          <Property Name="addressId" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="contectName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="companyName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="addressLn1" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="addressLn2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="addressLn3" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="postcode" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="phoneNo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="faxNo" Type="varchar" MaxLength="20" />
+          <Property Name="accountID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="region" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="telexNo" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="airwaybill">
+          <Key>
+            <PropertyRef Name="shippingNo" />
+          </Key>
+          <Property Name="shippingNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="packageID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="shippingExpenses" Type="double" Nullable="false" />
+          <Property Name="date" Type="date" Nullable="false" />
+          <Property Name="service" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="length" Type="double" Nullable="false" />
+          <Property Name="width" Type="double" Nullable="false" />
+          <Property Name="height" Type="double" Nullable="false" />
+          <Property Name="weight" Type="double" Nullable="false" />
+          <Property Name="destinationTax" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="transportCharge" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="typeOfExport" Type="varchar" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="bookingorder">
+          <Key>
+            <PropertyRef Name="bookingID" />
+          </Key>
+          <Property Name="bookingID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="addrID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="datetime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="serviceType" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="totalExpenses" Type="double" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="pickupDate" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="pickupTime" Type="varchar" MaxLength="13" Nullable="false" />
+        </EntityType>
+        <EntityType Name="centre">
+          <Key>
+            <PropertyRef Name="centreID" />
+          </Key>
+          <Property Name="centreID" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="region" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="descr" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="commercialinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="packageID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="totalValue" Type="double" Nullable="false" />
+          <Property Name="creationDate" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="consolidatemonthlyinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="value" Type="double" Nullable="false" />
+          <Property Name="startDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="endDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="isPay" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="creditcard">
+          <Key>
+            <PropertyRef Name="cardID" />
+          </Key>
+          <Property Name="cardID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="cardNo" Type="varchar" MaxLength="19" Nullable="false" />
+          <Property Name="cardType" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="expiryDate" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="holderName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="phoneNo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="credibility" Type="int" Nullable="false" />
+          <Property Name="creationDate" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="importinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="bookingID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="pickupAddrID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="recevierAddrID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="totalValue" Type="double" Nullable="false" />
+          <Property Name="creationDate" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="jobtitle">
+          <Key>
+            <PropertyRef Name="jobID" />
+          </Key>
+          <Property Name="jobID" Type="int" Nullable="false" />
+          <Property Name="jobName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="log">
+          <Key>
+            <PropertyRef Name="logID" />
+          </Key>
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="actionPerformed" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="logID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="times" Type="datetime" Precision="0" />
+          <Property Name="ipAddress" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="package">
+          <Key>
+            <PropertyRef Name="packageID" />
+          </Key>
+          <Property Name="packageID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="bookingID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="pkgName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="packageType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="serviceType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="isImport" Type="bool" Nullable="false" />
+          <Property Name="qty" Type="int" Nullable="false" />
+          <Property Name="unit" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="unitValue" Type="double" Nullable="false" />
+          <Property Name="statusTime" Type="datetime" Precision="0" />
+          <Property Name="cusConfirm" Type="bool" />
+          <Property Name="addrID" Type="varchar" MaxLength="10" />
+          <Property Name="status" Type="varchar" MaxLength="1" />
+          <Property Name="isComplete" Type="int" />
+          <Property Name="location" Type="varchar" MaxLength="100" />
+          <Property Name="centreID" Type="varchar" MaxLength="3" />
+          <Property Name="staffID" Type="varchar" MaxLength="10" />
+          <Property Name="remark" Type="varchar" MaxLength="255" />
+          <Property Name="length" Type="double" />
+          <Property Name="width" Type="double" />
+          <Property Name="height" Type="double" />
+          <Property Name="weight" Type="double" />
+          <Property Name="expense" Type="double" />
+        </EntityType>
+        <EntityType Name="paymentrecord">
+          <Key>
+            <PropertyRef Name="paymentID" />
+          </Key>
+          <Property Name="paymentID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="accountID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="payDateTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="payMethod" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="cardID" Type="varchar" MaxLength="10" />
+          <Property Name="payValue" Type="double" Nullable="false" />
+          <Property Name="centreID" Type="varchar" MaxLength="3" />
+          <Property Name="stfID" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="prealertrecord">
+          <Key>
+            <PropertyRef Name="messageID" />
+          </Key>
+          <Property Name="messageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="packageID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="pkgName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="accID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="statusID" Type="int" Nullable="false" />
+          <Property Name="message" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="isRead" Type="int" Nullable="false" />
+          <Property Name="timeUpdated" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="phoneNo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="jobID" Type="int" Nullable="false" />
+          <Property Name="centreID" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="edeaccountModelStoreContainer">
+          <EntitySet Name="addressbook" EntityType="Self.addressbook" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="airwaybill" EntityType="Self.airwaybill" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="bookingorder" EntityType="Self.bookingorder" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="centre" EntityType="Self.centre" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="commercialinvoice" EntityType="Self.commercialinvoice" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="consolidatemonthlyinvoice" EntityType="Self.consolidatemonthlyinvoice" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="creditcard" EntityType="Self.creditcard" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="customer" EntityType="Self.customer" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="importinvoice" EntityType="Self.importinvoice" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="jobtitle" EntityType="Self.jobtitle" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="log" EntityType="Self.log" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="package" EntityType="Self.package" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="paymentrecord" EntityType="Self.paymentrecord" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="prealertrecord" EntityType="Self.prealertrecord" Schema="edeaccount" store:Type="Tables" />
+          <EntitySet Name="staff" EntityType="Self.staff" Schema="edeaccount" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="edeaccountModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="addressbook">
+          <Key>
+            <PropertyRef Name="addressId" />
+          </Key>
+          <Property Name="addressId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="companyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="addressLn1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="addressLn2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="addressLn3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="postcode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="faxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="telexNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="airwaybill">
+          <Key>
+            <PropertyRef Name="shippingNo" />
+          </Key>
+          <Property Name="shippingNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="shippingExpenses" Type="Double" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <Property Name="service" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="length" Type="Double" Nullable="false" />
+          <Property Name="width" Type="Double" Nullable="false" />
+          <Property Name="height" Type="Double" Nullable="false" />
+          <Property Name="weight" Type="Double" Nullable="false" />
+          <Property Name="destinationTax" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="transportCharge" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="typeOfExport" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="bookingorder">
+          <Key>
+            <PropertyRef Name="bookingID" />
+          </Key>
+          <Property Name="bookingID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="addrID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="datetime" Type="DateTime" Nullable="false" />
+          <Property Name="serviceType" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="totalExpenses" Type="Double" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pickupDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pickupTime" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="centre">
+          <Key>
+            <PropertyRef Name="centreID" />
+          </Key>
+          <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descr" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="commercialinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="totalValue" Type="Double" Nullable="false" />
+          <Property Name="creationDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="consolidatemonthlyinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="startDate" Type="DateTime" Nullable="false" />
+          <Property Name="endDate" Type="DateTime" Nullable="false" />
+          <Property Name="isPay" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="creditcard">
+          <Key>
+            <PropertyRef Name="cardID" />
+          </Key>
+          <Property Name="cardID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cardNo" Type="String" MaxLength="19" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cardType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="expiryDate" Type="DateTime" Nullable="false" />
+          <Property Name="holderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+          <Property Name="credibility" Type="Int32" Nullable="false" />
+          <Property Name="creationDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="jobtitle">
+          <Key>
+            <PropertyRef Name="jobID" />
+          </Key>
+          <Property Name="jobID" Type="Int32" Nullable="false" />
+          <Property Name="jobName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="log">
+          <Key>
+            <PropertyRef Name="logID" />
+          </Key>
+          <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="actionPerformed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="logID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="times" Type="DateTime" />
+          <Property Name="ipAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="package">
+          <Key>
+            <PropertyRef Name="packageID" />
+          </Key>
+          <Property Name="packageID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="bookingID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pkgName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="packageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="serviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="isImport" Type="Boolean" Nullable="false" />
+          <Property Name="qty" Type="Int32" Nullable="false" />
+          <Property Name="unit" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="unitValue" Type="Double" Nullable="false" />
+          <Property Name="statusTime" Type="DateTime" />
+          <Property Name="cusConfirm" Type="Boolean" />
+          <Property Name="addrID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="isComplete" Type="Int32" />
+          <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="staffID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="length" Type="Double" />
+          <Property Name="width" Type="Double" />
+          <Property Name="height" Type="Double" />
+          <Property Name="weight" Type="Double" />
+          <Property Name="expense" Type="Double" />
+        </EntityType>
+        <EntityType Name="paymentrecord">
+          <Key>
+            <PropertyRef Name="paymentID" />
+          </Key>
+          <Property Name="paymentID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="payDateTime" Type="DateTime" Nullable="false" />
+          <Property Name="payMethod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cardID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="payValue" Type="Double" Nullable="false" />
+          <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="stfID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jobID" Type="Int32" Nullable="false" />
+          <Property Name="centreID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="edeaccountEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="addressbook" EntityType="Self.addressbook" />
+          <EntitySet Name="airwaybill" EntityType="Self.airwaybill" />
+          <EntitySet Name="bookingorder" EntityType="Self.bookingorder" />
+          <EntitySet Name="centre" EntityType="Self.centre" />
+          <EntitySet Name="commercialinvoices" EntityType="Self.commercialinvoice" />
+          <EntitySet Name="consolidatemonthlyinvoice" EntityType="Self.consolidatemonthlyinvoice" />
+          <EntitySet Name="creditcard" EntityType="Self.creditcard" />
+          <EntitySet Name="customer" EntityType="Self.customer" />
+          <EntitySet Name="jobtitle" EntityType="Self.jobtitle" />
+          <EntitySet Name="log" EntityType="Self.log" />
+          <EntitySet Name="packages" EntityType="Self.package" />
+          <EntitySet Name="paymentrecord" EntityType="Self.paymentrecord" />
+          <EntitySet Name="staff" EntityType="Self.staff" />
+          <EntitySet Name="importinvoices" EntityType="edeaccountModel.importinvoice" />
+          <EntitySet Name="prealertrecord" EntityType="edeaccountModel.prealertrecord" />
+        </EntityContainer>
+        <EntityType Name="importinvoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="accountID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="pickupAddrID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="recevierAddrID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="totalValue" Type="Double" Nullable="false" />
+          <Property Name="creationDate" Type="DateTime" Nullable="false" />
+          <Property Name="bookingID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="prealertrecord">
+          <Key>
+            <PropertyRef Name="messageID" />
+          </Key>
+          <Property Name="messageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="packageID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="pkgName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="accID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="statusID" Type="Int32" Nullable="false" />
+          <Property Name="message" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="isRead" Type="Int32" Nullable="false" />
+          <Property Name="timeUpdated" Type="DateTime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="edeaccountModelStoreContainer" CdmEntityContainer="edeaccountEntities">
+          <EntitySetMapping Name="addressbook">
+            <EntityTypeMapping TypeName="edeaccountModel.addressbook">
+              <MappingFragment StoreEntitySet="addressbook">
+                <ScalarProperty Name="addressId" ColumnName="addressId" />
+                <ScalarProperty Name="contectName" ColumnName="contectName" />
+                <ScalarProperty Name="companyName" ColumnName="companyName" />
+                <ScalarProperty Name="addressLn1" ColumnName="addressLn1" />
+                <ScalarProperty Name="addressLn2" ColumnName="addressLn2" />
+                <ScalarProperty Name="addressLn3" ColumnName="addressLn3" />
+                <ScalarProperty Name="postcode" ColumnName="postcode" />
+                <ScalarProperty Name="phoneNo" ColumnName="phoneNo" />
+                <ScalarProperty Name="faxNo" ColumnName="faxNo" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="telexNo" ColumnName="telexNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="airwaybill">
+            <EntityTypeMapping TypeName="edeaccountModel.airwaybill">
+              <MappingFragment StoreEntitySet="airwaybill">
+                <ScalarProperty Name="shippingNo" ColumnName="shippingNo" />
+                <ScalarProperty Name="packageID" ColumnName="packageID" />
+                <ScalarProperty Name="accID" ColumnName="accID" />
+                <ScalarProperty Name="shippingExpenses" ColumnName="shippingExpenses" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="service" ColumnName="service" />
+                <ScalarProperty Name="length" ColumnName="length" />
+                <ScalarProperty Name="width" ColumnName="width" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="destinationTax" ColumnName="destinationTax" />
+                <ScalarProperty Name="transportCharge" ColumnName="transportCharge" />
+                <ScalarProperty Name="typeOfExport" ColumnName="typeOfExport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bookingorder">
+            <EntityTypeMapping TypeName="edeaccountModel.bookingorder">
+              <MappingFragment StoreEntitySet="bookingorder">
+                <ScalarProperty Name="bookingID" ColumnName="bookingID" />
+                <ScalarProperty Name="accID" ColumnName="accID" />
+                <ScalarProperty Name="addrID" ColumnName="addrID" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="serviceType" ColumnName="serviceType" />
+                <ScalarProperty Name="totalExpenses" ColumnName="totalExpenses" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="pickupDate" ColumnName="pickupDate" />
+                <ScalarProperty Name="pickupTime" ColumnName="pickupTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="centre">
+            <EntityTypeMapping TypeName="edeaccountModel.centre">
+              <MappingFragment StoreEntitySet="centre">
+                <ScalarProperty Name="centreID" ColumnName="centreID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="descr" ColumnName="descr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="commercialinvoices">
+            <EntityTypeMapping TypeName="edeaccountModel.commercialinvoice">
+              <MappingFragment StoreEntitySet="commercialinvoice">
+                <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+                <ScalarProperty Name="invoiceID" ColumnName="invoiceID" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="packageID" ColumnName="packageID" />
+                <ScalarProperty Name="totalValue" ColumnName="totalValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="consolidatemonthlyinvoice">
+            <EntityTypeMapping TypeName="edeaccountModel.consolidatemonthlyinvoice">
+              <MappingFragment StoreEntitySet="consolidatemonthlyinvoice">
+                <ScalarProperty Name="invoiceID" ColumnName="invoiceID" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="startDate" ColumnName="startDate" />
+                <ScalarProperty Name="endDate" ColumnName="endDate" />
+                <ScalarProperty Name="isPay" ColumnName="isPay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="creditcard">
+            <EntityTypeMapping TypeName="edeaccountModel.creditcard">
+              <MappingFragment StoreEntitySet="creditcard">
+                <ScalarProperty Name="cardID" ColumnName="cardID" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="cardNo" ColumnName="cardNo" />
+                <ScalarProperty Name="cardType" ColumnName="cardType" />
+                <ScalarProperty Name="expiryDate" ColumnName="expiryDate" />
+                <ScalarProperty Name="holderName" ColumnName="holderName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="customer">
+            <EntityTypeMapping TypeName="edeaccountModel.customer">
+              <MappingFragment StoreEntitySet="customer">
+                <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phoneNo" ColumnName="phoneNo" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="credibility" ColumnName="credibility" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="jobtitle">
+            <EntityTypeMapping TypeName="edeaccountModel.jobtitle">
+              <MappingFragment StoreEntitySet="jobtitle">
+                <ScalarProperty Name="jobID" ColumnName="jobID" />
+                <ScalarProperty Name="jobName" ColumnName="jobName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="log">
+            <EntityTypeMapping TypeName="edeaccountModel.log">
+              <MappingFragment StoreEntitySet="log">
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="actionPerformed" ColumnName="actionPerformed" />
+                <ScalarProperty Name="logID" ColumnName="logID" />
+                <ScalarProperty Name="times" ColumnName="times" />
+                <ScalarProperty Name="ipAddress" ColumnName="ipAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="packages">
+            <EntityTypeMapping TypeName="edeaccountModel.package">
+              <MappingFragment StoreEntitySet="package">
+                <ScalarProperty Name="packageID" ColumnName="packageID" />
+                <ScalarProperty Name="accID" ColumnName="accID" />
+                <ScalarProperty Name="bookingID" ColumnName="bookingID" />
+                <ScalarProperty Name="pkgName" ColumnName="pkgName" />
+                <ScalarProperty Name="packageType" ColumnName="packageType" />
+                <ScalarProperty Name="serviceType" ColumnName="serviceType" />
+                <ScalarProperty Name="isImport" ColumnName="isImport" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="unit" ColumnName="unit" />
+                <ScalarProperty Name="unitValue" ColumnName="unitValue" />
+                <ScalarProperty Name="statusTime" ColumnName="statusTime" />
+                <ScalarProperty Name="cusConfirm" ColumnName="cusConfirm" />
+                <ScalarProperty Name="addrID" ColumnName="addrID" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="isComplete" ColumnName="isComplete" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="centreID" ColumnName="centreID" />
+                <ScalarProperty Name="staffID" ColumnName="staffID" />
+                <ScalarProperty Name="remark" ColumnName="remark" />
+                <ScalarProperty Name="length" ColumnName="length" />
+                <ScalarProperty Name="width" ColumnName="width" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="expense" ColumnName="expense" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="paymentrecord">
+            <EntityTypeMapping TypeName="edeaccountModel.paymentrecord">
+              <MappingFragment StoreEntitySet="paymentrecord">
+                <ScalarProperty Name="paymentID" ColumnName="paymentID" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="payDateTime" ColumnName="payDateTime" />
+                <ScalarProperty Name="payMethod" ColumnName="payMethod" />
+                <ScalarProperty Name="cardID" ColumnName="cardID" />
+                <ScalarProperty Name="payValue" ColumnName="payValue" />
+                <ScalarProperty Name="centreID" ColumnName="centreID" />
+                <ScalarProperty Name="stfID" ColumnName="stfID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="staff">
+            <EntityTypeMapping TypeName="edeaccountModel.staff">
+              <MappingFragment StoreEntitySet="staff">
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phoneNo" ColumnName="phoneNo" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="jobID" ColumnName="jobID" />
+                <ScalarProperty Name="centreID" ColumnName="centreID" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="importinvoices">
+            <EntityTypeMapping TypeName="edeaccountModel.importinvoice">
+              <MappingFragment StoreEntitySet="importinvoice">
+                <ScalarProperty Name="bookingID" ColumnName="bookingID" />
+                <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+                <ScalarProperty Name="totalValue" ColumnName="totalValue" />
+                <ScalarProperty Name="recevierAddrID" ColumnName="recevierAddrID" />
+                <ScalarProperty Name="pickupAddrID" ColumnName="pickupAddrID" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="invoiceID" ColumnName="invoiceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prealertrecord">
+            <EntityTypeMapping TypeName="edeaccountModel.prealertrecord">
+              <MappingFragment StoreEntitySet="prealertrecord">
+                <ScalarProperty Name="timeUpdated" ColumnName="timeUpdated" />
+                <ScalarProperty Name="isRead" ColumnName="isRead" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="accID" ColumnName="accID" />
+                <ScalarProperty Name="pkgName" ColumnName="pkgName" />
+                <ScalarProperty Name="packageID" ColumnName="packageID" />
+                <ScalarProperty Name="messageID" ColumnName="messageID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
